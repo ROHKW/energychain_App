@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".tokenmanagement"></activity>
+        <activity android:name=".energyhistory" />
+        <activity android:name=".searchCharge" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Car_Register" />
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
