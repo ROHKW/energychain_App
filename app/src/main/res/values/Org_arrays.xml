@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Org">
+        <item>소속: 자동차</item>
+        <item>소속: 산업단지</item>
+    </string-array>
+</resources>
