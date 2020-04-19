@@ -6,9 +6,191 @@
     tools:context=".Purchase_Fragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="구매하기" />
+        android:orientation="vertical"
+        android:id="@+id/purchaseScreen">
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/color_main_top">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="1 KW  ="
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="7dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="보유 전력량"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="7dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="45dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="구매량"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/purchaseCount">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="필요 토큰"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/needToken">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="보유 토큰"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/myToken">
+                </EditText>
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimaryDark"
+                android:text="구매하기"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/tokenpurchaseButton"/>
+
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimaryDark"
+                android:text="토큰 충전"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/TokenchargeButton"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
 
 </FrameLayout>

@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final Button purchaseButton = (Button)findViewById(R.id.purchaseButton);
-        final Button saleButton = (Button)findViewById(R.id.purchaseButton);
-        final Button mydataButton = (Button)findViewById(R.id.purchaseButton);
+        final Button saleButton = (Button)findViewById(R.id.saleButton);
+        final Button mydataButton = (Button)findViewById(R.id.mydataButton);
         final LinearLayout energymain = (LinearLayout)findViewById(R.id.energymain);
 
         purchaseButton.setOnClickListener(new View.OnClickListener() {
@@ -71,5 +72,16 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private long lastTimeBackPressed; //뒤로 두번 클릭시 앱 종료
+    @Override
+    public void onBackPressed(){
+        if(System.currentTimeMillis()-lastTimeBackPressed<1500){
+            finish();
+            return;
+        }
+        Toast.makeText(this, "'뒤로' 버튼을 한 번 더 눌러 종료합니다.", Toast.LENGTH_SHORT);
+        lastTimeBackPressed=System.currentTimeMillis();
     }
 }
