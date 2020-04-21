@@ -61,7 +61,7 @@
                 android:drawableStart="@drawable/ic_person_black_24dp"
                 android:drawableLeft="@drawable/ic_person_black_24dp"
                 android:layout_marginTop="50dp"
-                android:background="@drawable/sub1_button"/>
+                android:background="@drawable/main_button"/>
 
             <EditText
                 android:inputType="textPassword"
@@ -76,7 +76,7 @@
                 android:drawableStart="@drawable/ic_https_black_24dp"
                 android:drawableLeft="@drawable/ic_https_black_24dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/sub1_button"/>
+                android:background="@drawable/main_button"/>
 
             <Button
                 android:layout_width="280dp"

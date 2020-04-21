@@ -13,16 +13,21 @@
         android:orientation="horizontal"
         android:layout_marginTop="5dp">
 
+
+
+
         <Button
-            android:id="@+id/energymainButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_gravity="center"
-            android:background="@color/colorPrimary"
-            android:drawableLeft="@drawable/ic_home_black_30dp" />
+            android:id="@+id/energymainButton"
+            android:paddingTop="6dp"
+            android:drawableTop="@drawable/ic_home_black_40dp"
+            android:drawablePadding="-110dp"
+            android:background="@color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp">
+        </Button>
 
         <Button
             android:layout_width="match_parent"
@@ -191,24 +196,14 @@
                     android:layout_gravity="center"
                     android:id="@+id/energyHistoryButton"/>
 
-                <Button
-                    android:layout_width="280dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:textColor="#ffffff"
-                    android:background="@color/colorPrimaryDark"
-                    android:text="토큰 관리"
-                    android:layout_marginTop="20dp"
-                    android:layout_gravity="center"
-                    android:id="@+id/TokenManagementButton"/>
+
 
                 <TextView
                     android:layout_width="200dp"
                     android:layout_height="50dp"
                     android:text="고객센터 : 평일 09:00 ~ 18:00\n전화번호 : 043-261-3636"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="85dp"
+                    android:layout_marginTop="150dp"
                     android:layout_marginLeft="120dp"/>
 
             </LinearLayout>
