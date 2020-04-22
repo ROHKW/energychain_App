@@ -6,4 +6,5 @@
     <color name="colorWarning">#383E39</color>
     <color name="white">#FFFFFFFF</color>
     <color name="color_main_top">#F8F2B7</color>
+    <color name="colorChargeGrey">#323232</color>
 </resources>
