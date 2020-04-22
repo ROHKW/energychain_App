@@ -16,7 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".charge_recharge"></activity>
+        <activity android:name=".TransactionHistoryPage"></activity>
+        <activity android:name=".MyPage" />
+        <activity android:name=".charge_recharge" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
